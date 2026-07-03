@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>სტარტაპ იდეები — დღე 1</title>
+<style>
+  :root {
+    --bg: #f7f5f2;
+    --card: #ffffff;
+    --ink: #1c1b1a;
+    --ink-soft: #5a564f;
+    --accent: #d1531f;
+    --accent-soft: #f2dccb;
+    --line: #e6e1d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17140f;
+      --card: #221e18;
+      --ink: #f3ede3;
+      --ink-soft: #b9b0a1;
+      --accent: #ff8a4c;
+      --accent-soft: #3a2a1c;
+      --line: #362f26;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f7f5f2; --card: #ffffff; --ink: #1c1b1a; --ink-soft: #5a564f;
+    --accent: #d1531f; --accent-soft: #f2dccb; --line: #e6e1d8;
+  }
+  :root[data-theme="dark"] {
+    --bg: #17140f; --card: #221e18; --ink: #f3ede3; --ink-soft: #b9b0a1;
+    --accent: #ff8a4c; --accent-soft: #3a2a1c; --line: #362f26;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", "Noto Sans Georgian", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    margin-bottom: 56px;
+  }
+  .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 0 0 16px;
+    line-height: 1.25;
+  }
+  header p {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    max-width: 640px;
+    margin: 0;
+  }
+  .idea {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .idea::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--accent);
+  }
+  .idea-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+  .idea h2 {
+    font-size: 1.3rem;
+    margin: 0 0 18px;
+  }
+  .block {
+    margin-bottom: 14px;
+  }
+  .block:last-child { margin-bottom: 0; }
+  .label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .label.problem { color: var(--accent); }
+  .text { margin: 0; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Startup Bootcamp · დღე 1</div>
+      <h1>3 პრობლემა, 3 AI იდეა</h1>
+      <p>ინდივიდუალური დავალება: ყოველდღიურობაში (სკოლა, სწავლა, მეგობრები, გართობა) ნაპოვნი პრობლემები და მათი AI გამოსავალი, ხვალინდელი გუნდური სესიისთვის.</p>
+    </header>
+
+    <section class="idea">
+      <div class="idea-number">1</div>
+      <h2>დავალებების დაგეგმვა</h2>
+      <div class="block">
+        <div class="label problem">პრობლემა</div>
+        <p class="text">საშინაო დავალებების და გამოცდებისთვის მომზადების დაგეგმვა ქაოსურია — ბოლო წუთამდე გადავდებ და ვერ ვხვდები, რომელ საგანს რამდენი დრო სჭირდება.</p>
+      </div>
+      <div class="block">
+        <div class="label">AI გამოსავალი</div>
+        <p class="text">AI აპლიკაცია, რომელშიც შევყავარ ჩემი გაკვეთილების ცხრილი და გამოცდების თარიღები — ის თავად ანაწილებს სასწავლო მასალას დღეებში, ითვალისწინებს რომელი თემა მიჭირს (წინა შეცდომების მიხედვით) და ყოველ დილით მიგზავნის მოკლე „დღევანდელ გეგმას" ერთი კონკრეტული ამოცანით, ნაცვლად უსასრულო სიისა.</p>
+      </div>
+    </section>
+
+    <section class="idea">
+      <div class="idea-number">2</div>
+      <h2>მეგობრებთან შეთანხმება</h2>
+      <div class="block">
+        <div class="label problem">პრობლემა</div>
+        <p class="text">მეგობრებთან ერთად თამაშის ან შეხვედრის დროზე შეთანხმება ჯგუფურ ჩატში საათობით გრძელდება — ყველას სხვადასხვა განრიგი აქვს და ბოლოს არავინ თანხმდება.</p>
+      </div>
+      <div class="block">
+        <div class="label">AI გამოსავალი</div>
+        <p class="text">ბოტი ჯგუფურ ჩატში, რომელსაც თითოეული მეგობარი უბრალოდ ეუბნება თავის თავისუფალ დროს ბუნებრივი ენით („ხუთშაბათს საღამოს თავისუფალი ვარ"), და AI თავად პოულობს საერთო ინტერვალს და გვთავაზობს 2-3 ვარიანტს, დამატებითი განხილვის გარეშე.</p>
+      </div>
+    </section>
+
+    <section class="idea">
+      <div class="idea-number">3</div>
+      <h2>ინტერაქტიული სწავლა</h2>
+      <div class="block">
+        <div class="label problem">პრობლემა</div>
+        <p class="text">ახალი ინგლისური სიტყვების ან ისტორიის ფაქტების დამახსოვრება მოსაწყენია და სწრაფად მავიწყდება — უბრალო ბარათებით სწავლა პროგრესის განცდას არ იძლევა.</p>
+      </div>
+      <div class="block">
+        <div class="label">AI გამოსავალი</div>
+        <p class="text">AI აპლიკაცია, რომელიც სასწავლო მასალას ინტერაქტიულ დიალოგად აქცევს — მაგალითად, ისტორიულ პიროვნებასთან ან ინგლისურენოვან პერსონაჟთან „ვსაუბრობ", და ის ჩემს პასუხებზე დაყრდნობით თავად ირჩევს, რომელი ფაქტი ან სიტყვა გამიმეოროს ხელახლა, სანამ არ დამამახსოვრდება.</p>
+      </div>
+    </section>
+
+    <footer>
+      მომზადებულია ხვალინდელი გუნდური სესიისთვის.
+    </footer>
+  </div>
+</body>
+</html>
